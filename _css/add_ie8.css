@@ -1,0 +1,9 @@
+.boxgrid {  
+  	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+.alpha30 {
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4cffffff, endColorstr=#4cffffff)";
+}
+.cv {
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}

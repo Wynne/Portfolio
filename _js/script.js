@@ -101,18 +101,19 @@ $(document).ready(function() {
     //   
     //   $('#grid').resizeImg();
       
-       jQuery.fn.getGrid = function () {
-         
-                $('.togrid').click(function () {
-                 $.get('_php/grid.php', function(html) {
-         
-                   // REPLACE THIS PANEL WITH HTML
-                   $('#work').html(html);
-                   $(this).makeThumbs();
-                 });
-         
-              });
-              };     
+   jQuery.fn.getGrid = function () {
+     
+      $('.togrid').click(function () {
+       $.get('_php/grid.php', function(html) {
+
+         // REPLACE THIS PANEL WITH HTML
+         $('#work').html(html);
+         $(this).makeThumbs();
+       });
+
+    });
+  };
+  
   //DEFINE NEW FUNCTION TO CLICK AND REPLACE CONTENT
   jQuery.fn.nextSlide = function() {
     
@@ -131,7 +132,8 @@ $(document).ready(function() {
            
            // INCREASE INDEXNUMBER BY 1
            i++;
-           $(this).getGrid();                     
+           $(this).getGrid();
+           
            // REPEAT THIS FUNCTION ON NEW SLIDE
            $('#slide').nextSlide({indexNumber: i});
            
@@ -171,12 +173,5 @@ $(document).ready(function() {
    	  });
 	};
 	$(this).makeThumbs();	
-	// $('#grid > li').click(function () {
-	// 		$('#grid').hide();
-	// 		$.get('_php/evite.php', function(data) {
-	// 		   $('#work').html(data);
-	// 		  alert('Load was performed.');
-	// 		});
-	// 	});
 
 });

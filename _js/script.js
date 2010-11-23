@@ -10,6 +10,8 @@ DESCRIPTION: This is the JavaScript required to create the accordion style menu.
 NOTE: Because of a bug in jQuery with IE8 we had to add an IE stylesheet hack to get the system to work in all browsers. I hate hacks but had no choice :(.
 ************************************************************************************************************************/
 $(document).ready(function() {
+  
+  $('#wynne').weatherfeed(['USNY0996']);
   	 
   	// var p = $('#content');
 	//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)

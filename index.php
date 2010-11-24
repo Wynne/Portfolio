@@ -1,9 +1,9 @@
 <? include ('header.php'); ?>
-<body id="wynne">
+<body>
 <div id="content">
   <h1>H!</h1>
-  <div class="panel">I'm a geek in progress. I live and breath design but I'm also addicted to programming.</div>
-  <h1>WORK</h1>
+  <div class="panel"><p>I'm a geek in progress. I live and breath design but I'm also addicted to programming.</p></div>
+  <h1>Work</h1>
   <div id="work" class="panel"><? include ('_php/grid.php'); ?></div>
   <h1 class="clear">411
   	<div class="downloads">

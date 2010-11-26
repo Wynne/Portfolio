@@ -11,6 +11,7 @@ NOTE: Because of a bug in jQuery with IE8 we had to add an IE stylesheet hack to
 ************************************************************************************************************************/
 $(document).ready(function() {
   
+  	 
   	// var p = $('#content');
 	//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
 	$('h1').click(function() {

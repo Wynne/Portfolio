@@ -1,8 +1,6 @@
 <ol id="grid">
-  <li class="boxgrid">oh!</li>
-  <li class="boxgrid"><img src="_content/thumb-evite.png" width="280" height="280" alt="Thumb Evite"></li>
-  <li class="boxgrid"><img src="_content/thumb-grapevine.png" width="280" height="280" alt="Thumb Grapevine"></li>
-  <li class="boxgrid"><img src="_content/thumb-addfriends.png" width="280" height="280" alt="Thumb Addfriends"></li>
-  <li class="boxgrid">oh!</li>
-  <li class="boxgrid">oh!</li>
+  <li class="boxgrid"><img src="_content/thumb-logos.png" width="280" height="280" alt="Logos"></li>
+  <li class="boxgrid"><img src="_content/thumb-evite.png" width="280" height="280" alt="Evite"></li>
+  <li class="boxgrid"><img src="_content/thumb-grapevine.png" width="280" height="280" alt="Grapevine"></li>
+  <li class="boxgrid"><img src="_content/thumb-addfriends.png" width="280" height="280" alt="Add Friends Flow"></li>
 </ol>

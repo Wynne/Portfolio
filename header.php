@@ -14,7 +14,7 @@
 	<meta name="ROBOTS" content="ALL" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
-	<meta name="Copyright" content="(c) 2010 __MyCompanyName__" />
+	<meta name="Copyright" content="(c) 2010 Hot Totti" />
 	
 	<?php require_once('browser.php'); css_add() ?>
 	<link href="_css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />

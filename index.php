@@ -1,5 +1,5 @@
 <? include ('header.php'); ?>
-<body id="">
+<body id="wynne">
 <div id="content">
   <h1>H!</h1>
   <div class="panel"><p>I'm a geek in progress. I live and breath design but I'm also addicted to programming.</p></div>

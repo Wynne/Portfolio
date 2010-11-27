@@ -17,7 +17,6 @@
 	<meta name="Copyright" content="(c) 2010 __MyCompanyName__" />
 	
 	<?php require_once('browser.php'); css_add() ?>
-	<link href="_css/font.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="_css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>

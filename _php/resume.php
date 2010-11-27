@@ -29,17 +29,15 @@
               <li>Illustrator</li>
               <li>Fireworks</li>
               <li>InDesign</li>
-              <li>Quark Express</li>
               <li>Final Cut Pro</li>
               <li>Visual Studio</li>
               <li>Visio</li>
               <li>HTML/CSS</li>
-              <li>ActionScript 2.0</li>
+              <li>ActionScript 3.0</li>
               <li>XML</li>
-              <li>Excel</li>
-              <li>Word</li>
               <li>JavaScript <span class="light">(learning)</span></li>
               <li>PHP <span class="light">(learning)</span></li>
+							<li>Python <span class="light">(learning)</span></li>
             </ul>
           </li>
           <li><h4>Experience</h4>

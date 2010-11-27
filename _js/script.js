@@ -130,6 +130,7 @@ $(document).ready(function() {
            
            // REPLACE SLIDE CONTENT WITH HTML
            $('#slide').html(html);
+					$('html, body').animate({scrollTop: '0'}, 0);
            
            // INCREASE INDEXNUMBER BY 1
            i++;

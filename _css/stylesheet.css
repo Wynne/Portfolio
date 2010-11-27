@@ -55,6 +55,9 @@ h1 {
   float: right;
   margin-top: -50px;
 }
+.togrid:hover {
+	cursor: pointer;
+}
 #grid {
   margin-bottom: 15px;
   float: left;
@@ -73,6 +76,7 @@ h1 {
 }
 .boxgrid:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 /*work section: slide*/
 .slide {
@@ -81,6 +85,9 @@ h1 {
   border-radius: 2px;
   position: relative;
   margin-bottom: 5px;
+}
+.slide:hover {
+	cursor: pointer;
 }
 .proj-title {
   position: absolute;

@@ -1,17 +1,21 @@
 <?php include ('header.php'); ?>
 <body>
-<div id="content">
-  <h1>H!</h1>
-  <div class="panel">I'm a geek in progress. I live and breath design but I'm also addicted to programming.<br/>This site is only 30% done.</div>
-  <h1>Work</h1>
-  <div id="work" class="panel"><?php include ('_php/grid.php'); ?></div>
-  <h1 class="clear">411
-  	<div class="downloads">
-  		<a href="http://wynnechan.com/portfolio.pdf">CV + PORTFOLIO</a>
-    	<a href="http://wynnechan.com/resume.pdf">CV</a>
-  	</div>
-	</h1>
-  <?php include ('_php/resume.php'); ?>
+<div class="wrapper">
+	<div class="menu">links</div>
+<div class="content">	
+	<div id="top">
+		<ul class="intro">
+			<li><h5>Grapevine</h5><p></p></li>
+			<li><h5>Tracks.io</h5><p></p></li>
+			<li><h5>S.H.I</h5><p></p></li>
+			<li><h5>Tokyo Underground</h5><p></p></li>
+		</ul>
+	</div>
+	<img src="_img/moodboard.jpg" width="960" height="968" alt="Moodboard">
+	<img src="_img/process.jpg" width="960" height="994" alt="Process">
+	<img src="_img/byproducts.jpg" width="960" height="990" alt="Byproducts">
+	<img src="_img/grapevine.png" width="960" height="1282" alt="Grapevine">
+</div>
 </div>
 </body>
 </html>

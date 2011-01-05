@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="<?= (stristr($_SERVER["HTTP_ACCEPT"],"application/xhtml+xml") ? 'xhtml+xml' : 'text/html') ?>; charset=utf-8" />
+	<!-- <meta http-equiv="Content-Type" content="<?= (stristr($_SERVER["HTTP_ACCEPT"],"application/xhtml+xml") ? 'xhtml+xml' : 'text/html') ?>; charset=utf-8" /> -->
 	<meta http-equiv="Content-Language" content="en-us" />
 
 	<title> | index</title>

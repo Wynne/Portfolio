@@ -65,12 +65,12 @@ ul.sections li {
 }
 
 ul.sections > li h2 {
-font-size: .8em;
+font-size: .9em;
 font-weight: normal;
 color: #000;
 background: #fff;
 display: block;
-padding: 23px 10px 13px;
+padding: 19px 10px 13px;
 /*opacity: .75;*/
 /*text-align: center;*/
 overflow: hidden;

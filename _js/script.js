@@ -1,179 +1,106 @@
-/***********************************************************************************************************************
-DOCUMENT: includes/javascript.js
-DEVELOPED BY: Ryan Stemkoski
-COMPANY: Zipline Interactive
-EMAIL: ryan@gozipline.com
-PHONE: 509-321-2849
-DATE: 3/26/2009
-UPDATED: 3/25/2010
-DESCRIPTION: This is the JavaScript required to create the accordion style menu.  Requires jQuery library
-NOTE: Because of a bug in jQuery with IE8 we had to add an IE stylesheet hack to get the system to work in all browsers. I hate hacks but had no choice :(.
-************************************************************************************************************************/
-$(document).ready(function() {
-  
-  	 
-  	// var p = $('#content');
-	//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
-	$('h1').click(function() {
+/*!
+* Sticky Section Headers
+*
+* Copyright (c) 2010 Florian Plank (http://www.polarblau.com/)
+* Dual licensed under the MIT (MIT-LICENSE.txt)
+* and GPL (GPL-LICENSE.txt) licenses.
+*
+* USAGE:
+*
+*
+* $('#container').stickySectionHeaders({
+* stickyClass : 'sticky',
+* headlineSelector : 'strong'
+* });
+*/
 
-		//REMOVE THE ON CLASS FROM ALL BUTTONS
-		$('h1').removeClass('on');
-		$('h1').children().css('visibility', 'hidden');
-				  
-		//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
-	 	$('.panel').slideUp(600);
-   
-		//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
-		if($(this).next().is(':hidden') == true) {
-			
-			//ADD THE ON CLASS TO THE BUTTON
-			$(this).addClass('on');
-			$(this).children().css('visibility', 'visible');	
-			  
-			//OPEN THE SLIDE
-			//$(this).next().fadeIn('fast');
-			$(this).next().slideDown(600);
-			
-			//SCROLL TO THE TOP OF THE PAGE -wynne
-			$('html, body').animate({scrollTop: '0px'}, 700);
-		 } 
-		  
-	 });
-	  
+(function($){
+	jQuery.event.add(window, "load", resizeFrame);
+	jQuery.event.add(window, "resize", resizeFrame);
+
+	function resizeFrame() 
+	{
+	    var h = $(window).height();
+	    var w = $(window).width();
+	    $("#container").css('height', h);
+			if (w<=1070) {
+				$(".links").css('top', '30px');
+				$(".links").css('background-color', 'white')
+			}
+			else  {
+				$(".links").css('top', '10px');
+				$(".links").css('background-color', 'transparent')
+			}
+	    // $(".links").css('top',(w < 1024) ? '30px');
+	}
 	
-	/*** REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
 	
-	//ADDS THE .OVER CLASS FROM THE STYLESHEET ON MOUSEOVER 
-	$('h1').mouseover(function() {
-		$(this).addClass('over');
-	//ON MOUSEOUT REMOVE THE OVER CLASS
-	}).mouseout(function() {
-		$(this).removeClass('over');
+  $.fn.stickySectionHeaders = function(options) {
+
+   var settings = $.extend({
+   	stickyClass: 'sticky',
+   	headlineSelector: 'h2'
+   }, options);
+
+   return $(this).each(function() {
+   	var $this = $(this);
+   		$this.find('ul:first').scroll(function(e) {
+   			$this.find('ul:first > li').each(function() {
+   				var t = $(this).position().top;
+   				var h = $(this).outerHeight();
+   				var $s = $(this).find(settings.headlineSelector);
+   				var sh = $s.outerHeight();
+   				if (t < 0) {
+   					$(this).addClass(settings.stickyClass).css('paddingTop', sh);
+   					$s.css({
+   						'width': $(this).outerWidth() - $s.cssSum('paddingLeft', 'paddingRight'),
+   						'top': (h + t < sh) ? (sh - (t + h)) * -1 : ''
+   					});
+
+   				} else $(this).removeClass(settings.stickyClass).css('paddingTop', '');
+   				});
+   			});
+   		});
+  	};
+
+  /* A little helper to calculate the sum of different
+* CSS properties
+*
+* EXAMPLE:
+* $('#my-div').cssSum('paddingLeft', 'paddingRight');
+*/
+  $.fn.cssSum = function() {
+   var $self = $(this), sum = 0;
+   $(arguments).each(function(i, e) {
+   sum += parseInt($self.css(e), 10);
+   });
+   return sum;
+  };
+	$(function() {
+		$('#container').stickySectionHeaders();
 	});
 	
-	/*** END REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+	$(function() {
+	 $('h2').hover(
+	  function () {
+	   $('p',$(this)).stop().animate({'marginRight':'-2px'},200);
+		 $('span').css('visibility', 'hidden');
+	  },
+	  function () {
+	   $('p',$(this)).stop().animate({'marginRight':'-295px'},200);
+		 $('span').css('visibility', 'visible');
+	  }
+	 );
+	});
 	
-	// CLOSES ALL S ON PAGE LOAD
-	$('.panel').hide();
-	
-	
-	/********************************************************************************************************************
-	WYNNE'S SCRIPTS
-	********************************************************************************************************************/	
-	
-	
-	// SCROLL TO THE TOP OF THE PAGE ON CLICK
-	$('#up').click(function () {
-  	$('html, body').animate({scrollTop: '0px'}, 800);
-  });
-  
-
-    // jQuery.fn.resizeImg = function() {
-    //   
-    //   $('.boxgrid > img').each(function () {
-    //     var w = this.width
-    //     var h = this.height
-    //     var ratio = w / h;
-    //     var fixedSize = 500;
-    //     
-    //     if (w > fixedSize) {
-    //       this.width = fixedSize
-    //     }
-    //     
-    //     if (h > fixedSize) {
-    //       var sizedwidth = fixedSize / ratio;
-    //       var sizedheight = fixedSize / ratio;
-    //       
-    //       if (h > w) {
-    //         if (h > sizedwidth) {
-    //           this.height = fixedSize
-    //         }
-    //         if (sizedwidth > fixedSize) {
-    //           this.width = this.width * ratio;
-    //         } else {
-    //           this.height = this.height * ratio;
-    //         }
-    //       } else {
-    //         this.width = fixedSize
-    //       }
-    //     }
-    //   });
-    //   };
-    //   
-    //   $('#grid').resizeImg();
-      
-   jQuery.fn.getGrid = function () {
-     
-      $('.togrid').click(function () {
-       $.get('_php/grid.php', function(html) {
-
-         // REPLACE THIS PANEL WITH HTML
-         $('#work').html(html);
-         $(this).makeThumbs();
-       });
-
-    });
-  };
-  
-  //DEFINE NEW FUNCTION TO CLICK AND REPLACE CONTENT
-  jQuery.fn.nextSlide = function() {
-    
-    //SET ATTRIBUTE INDEXNUMBER
-    var args = arguments[0] || {};
-    var i = args.indexNumber;
-      
-      //CLICK TO REPLACE THIS PANEL WITH NEXT
-      $('#slide').click(function () {
-        
-         // APPEND INDEXNUMBER TO FILE NAME AND GET HTML
-         $.get('_php/'+i+'work.php', function(html) {
-           
-           // REPLACE SLIDE CONTENT WITH HTML
-           $('#slide').html(html);
-					$('html, body').animate({scrollTop: '0'}, 0);
-           
-           // INCREASE INDEXNUMBER BY 1
-           i++;
-           $(this).getGrid();
-           
-           // REPEAT THIS FUNCTION ON NEW SLIDE
-           $('#slide').nextSlide({indexNumber: i});
-           
-         });
-       });
-  };
-  
-	// GET SLIDE ASSOCIATED WITH CLICKED THUMBNAIL
-	jQuery.fn.makeThumbs = function () {
-	  
-  	$('#grid > li').click(function () {
-	  
-  	  // GET INDEXNUMBER
-  		var i = $(this).index()
-		
-  		// GET SLIDE.PHP
-  		$.get('_php/slide.php', function(html) {
-		  
-  		    // REPLACE THIS GRID WITH HTML
-  		    $('#grid').replaceWith(html);
-		    
-  	    	// APPEND INDEXNUMBER TO FILE NAME AND GET HTML
-      		$.get('_php/'+i+'work.php', function(html) {
-		  
-      		  // INSERT HTML INTO #SLIDE
-      			$('#slide').html(html);
-      			$(html).fadeIn('slow'); // doesn't seem to work
-    						
-      			// INCREASE INDEXNUMBER BY 1
-      			i++;
-			      $(this).getGrid();   
-      			// SET CLICK FUNCTION FOR NEW SLIDE
-      			$('#slide').nextSlide({indexNumber: i});
-      	
-      		});
-    	  });
-   	  });
-	};
-	$(this).makeThumbs();	
-
-});
+	$(function(){
+	var spt = $('span.email');
+	var at = / at /;
+	var dot = / dot /g;
+	var addr = $(spt).text().replace(at,"@").replace(dot,".");
+	$(spt).after('<a class="email" href="mailto:'+addr+'"title="email me">'+ 'contact' +'</a>')
+	.hover(function(){window.status="email me";}, function(){window.status="";});
+	$(spt).remove();
+	});
+	 
+})(jQuery);

@@ -22,5 +22,9 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<script type="text/javascript" src="_js/script.js"></script>
 
-	
+	<script type="text/javascript" charset="utf-8">
+
+
+
+	</script>
 </head>

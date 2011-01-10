@@ -15,6 +15,18 @@
 */
 
 (function($){
+	
+	$(function() {
+	 $('.links > li').hover(
+	  function () {
+	   $('a',$(this)).stop().animate({'marginLeft':'0px'},200);
+	  },
+	  function () {
+	   $('a',$(this)).stop().animate({'marginLeft':'-112px'},200);
+	  }
+	 );
+	});
+	
 	jQuery.event.add(window, "load", resizeFrame);
 	jQuery.event.add(window, "resize", resizeFrame);
 
@@ -23,15 +35,35 @@
 	    var h = $(window).height();
 	    var w = $(window).width();
 	    $("#container").css('height', h);
-			if (w<=1070) {
-				$(".links").css('top', '30px');
-				$(".links").css('background-color', 'white')
-			}
-			else  {
-				$(".links").css('top', '10px');
-				$(".links").css('background-color', 'transparent')
-			}
-	    // $(".links").css('top',(w < 1024) ? '30px');
+				
+			// if (w<=1090) {
+			// 				$('.links > li').children().css('margin-left', '-70px')
+			// 				$('.links > li').children().css('background-position', 'right')
+			// 				$('.links > li').children().css('padding-right', '25px')
+			// 				
+			// 				 $('.links > li').hover(
+			// 				  function () {
+			// 				   $('a',$(this)).stop().animate({'marginLeft':'-15px'},200);
+			// 				
+			// 				  },
+			// 				  function () {
+			// 				   $('a',$(this)).stop().animate({'marginLeft':'-70px'},200);
+			// 				  }
+			// 				 );
+			// 		}
+			// 		else  {
+			// 			$('.links > li').children().css('margin-left', '0')
+			// 			$('.links > li').children().css('background-position', 'left')
+			// 			$('.links > li').children().css('padding-right', '2px')
+			// 			$('.links > li').hover(
+			// 			  function () {
+			// 			   $('a',$(this)).stop();				
+			// 			  },
+			// 			  function () {
+			// 			   $('a',$(this)).stop();
+			// 			  }
+			// 			 );
+			// 		}
 	}
 	
 	
@@ -80,26 +112,28 @@
 		$('#container').stickySectionHeaders();
 	});
 	
-	$(function() {
-	 $('h2').hover(
-	  function () {
-	   $('p',$(this)).stop().animate({'marginRight':'-2px'},200);
-		 $('span').css('visibility', 'hidden');
-	  },
-	  function () {
-	   $('p',$(this)).stop().animate({'marginRight':'-295px'},200);
-		 $('span').css('visibility', 'visible');
-	  }
-	 );
-	});
+
+	
+	// $(function() {
+	//  $('h2').hover(
+	//   function () {
+	//    $('p',$(this)).stop().animate({'marginRight':'-2px'},200);
+	// 	 $('span').css('visibility', 'hidden');
+	//   },
+	//   function () {
+	//    $('p',$(this)).stop().animate({'marginRight':'-295px'},200);
+	// 	 $('span').css('visibility', 'visible');
+	//   }
+	//  );
+	// });
 	
 	$(function(){
 	var spt = $('span.email');
 	var at = / at /;
 	var dot = / dot /g;
 	var addr = $(spt).text().replace(at,"@").replace(dot,".");
-	$(spt).after('<a class="email" href="mailto:'+addr+'"title="email me">'+ 'contact' +'</a>')
-	.hover(function(){window.status="email me";}, function(){window.status="";});
+	$(spt).after('<a class="email" href="mailto:'+addr+'"title="email me">'+ 'send me an email' +'</a>')
+	.hover(function(){window.status="my email";}, function(){window.status="";});
 	$(spt).remove();
 	});
 	 

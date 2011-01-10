@@ -1,7 +1,10 @@
 <?php include ('header.php'); ?>
 <body>
 	<div class="wrapper">
-		<div class="links"><a class="resume" href="wynnechan.pdf" title="download pdf">resume</a><span class="email">mswynnechan at gmail dot com</span></div>
+		<ul class="links">
+			<li><a class="resume" href="wynnechan.pdf" title="download pdf">download resume</a></li>
+			<li><span class="email">mswynnechan at gmail dot com</span></li>
+		</ul>
 		<!-- <div class="menu">links</div> -->
 	<div class="content" id="container">		
 		<ul class="sections">
@@ -15,7 +18,7 @@
 					</ul>
 				</div>
 			</li> -->
-			<li><h2>Grapevine | profile<p class="desc"><span>?</span> A music application</p></h2>
+			<li><h2>Grapevine | profile<!-- <p class="desc"><span>?</span> A music application</p> --></h2>
 				<ul>
 					<li><img src="_img/moodboard.jpg" width="945" height="1071" alt="Moodboard"></li>
 					<li><img src="_img/process.jpg" width="945" height="1071" alt="Process"></li>

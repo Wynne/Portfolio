@@ -23,43 +23,39 @@ body {
 	position: absolute;
 	top: 10px;
 	left: 0px;
-	padding:  0;
 	/*background: url('../_img/logo.png') no-repeat;*/
 	z-index: 99;
 }
-.links a, .email {
+
+.links a {
 	display: block;
 	color: #000;
 	font-size:.8em;
-	margin: 2px 0 5px;
-	/*background-color: #fff;*/
-	padding: 2px 5px 2px 25px;
+	margin: 2px 0 2px -112px;
+	padding: 2px 15px 2px 10px;
+	width: 110px;
 }
-
-a.resume {
-	background: url('../_img/icon-links.png') no-repeat;
-	background-position: 10px -22px;
+.resume {
+	background: url('../_img/resume-b.png') no-repeat right center;
 }
-a.resume:hover {
-	background: url('../_img/icon-links.png') #000 no-repeat;
-	background-position: 10px 3px;
+/*a.resume:hover {
+	background: url('../_img/resume-w.png') #000 no-repeat right;
 	color: #fff;
-}
+}*/
 .email {
-	background: url('../_img/icon-links.png') no-repeat;
-	background-position: 10px -63px;
+	background: url('../_img/email-b.png') no-repeat right center;
 }
-.email:hover {
-	background: url('../_img/icon-links.png') #000 no-repeat;
-	background-position: 10px -44px;
+/*.email:hover {
+	background: url('../_img/email-w.png') #000 no-repeat right;
 	color: #fff;
-}
+}*/
 
-.links a:hover {
+/*.links a:hover {
 	color: #fff;
 	background-color: #000;;
-}
-.menu {
+}*/
+
+/*.menu {
 	background: url('../_img/menu-bg.png') repeat-x;
 	height: 38px;
 	position: fixed;
@@ -75,7 +71,7 @@ a.resume:hover {
 	padding: 600px 41px 30px;
 	overflow: hidden;
 }
-
+*/
 h5 {
 	margin: 10px;
 }

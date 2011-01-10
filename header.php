@@ -6,7 +6,7 @@
 	<!-- <meta http-equiv="Content-Type" content="<?= (stristr($_SERVER["HTTP_ACCEPT"],"application/xhtml+xml") ? 'xhtml+xml' : 'text/html') ?>; charset=utf-8" /> -->
 	<meta http-equiv="Content-Language" content="en-us" />
 
-	<title> | index</title>
+	<title>Wynne Chan | 2010 Portfolio</title>
 
 	<meta name="Keywords" content="__CHANGE__" />
 	<meta name="Description" content="__CHANGE__" />

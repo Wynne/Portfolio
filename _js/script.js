@@ -16,17 +16,6 @@
 
 (function($){
 	
-	$(function() {
-	 $('.links > li').hover(
-	  function () {
-	   $('a',$(this)).stop().animate({'marginLeft':'0px'},200);
-	  },
-	  function () {
-	   $('a',$(this)).stop().animate({'marginLeft':'-112px'},200);
-	  }
-	 );
-	});
-	
 	jQuery.event.add(window, "load", resizeFrame);
 	jQuery.event.add(window, "resize", resizeFrame);
 
@@ -35,7 +24,16 @@
 	    var h = $(window).height();
 	    var w = $(window).width();
 	    $("#container").css('height', h);
-				
+			
+			if (w<=1000) {
+				$('.links').css('top', '48px')
+				$('.links').css('opacity', '.75')
+			}
+			else {
+				// $('.links > li').children().css('background-color', 'transparent')	
+				$('.links').css('top', '16px')
+				$('.links').css('opacity', '1')			
+			}
 			// if (w<=1090) {
 			// 				$('.links > li').children().css('margin-left', '-70px')
 			// 				$('.links > li').children().css('background-position', 'right')
@@ -112,7 +110,16 @@
 		$('#container').stickySectionHeaders();
 	});
 	
-
+	$(function() {
+	 $('.links > li').hover(
+	  function () {
+	   $('a',$(this)).stop().animate({'marginLeft':'0px'},200);
+	  },
+	  function () {
+	   $('a',$(this)).stop().animate({'marginLeft':'-112px'},200);
+	  }
+	 );
+	});
 	
 	// $(function() {
 	//  $('h2').hover(

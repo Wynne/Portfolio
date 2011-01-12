@@ -176,7 +176,6 @@ class browser{
 		$this->Name = $bd['browser'];
 		$this->Version = $bd['version'];
 		$this->Platform = $bd['platform'];
-		$this->AOL = $bd['aol'];
 	}
 }
 ?>

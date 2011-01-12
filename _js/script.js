@@ -116,7 +116,7 @@
 	   $('a',$(this)).stop().animate({'marginLeft':'0px'},200);
 	  },
 	  function () {
-	   $('a',$(this)).stop().animate({'marginLeft':'-112px'},200);
+	   $('a',$(this)).stop().animate({'marginLeft':'-57px'},200);
 	  }
 	 );
 	});
@@ -139,7 +139,7 @@
 	var at = / at /;
 	var dot = / dot /g;
 	var addr = $(spt).text().replace(at,"@").replace(dot,".");
-	$(spt).after('<a class="email" href="mailto:'+addr+'"title="email me">'+ 'send me an email' +'</a>')
+	$(spt).after('<a class="email" href="mailto:'+addr+'"title="send me an email">'+ 'contact' +'</a>')
 	.hover(function(){window.status="my email";}, function(){window.status="";});
 	$(spt).remove();
 	});

@@ -11,8 +11,8 @@ a {
 }
 
 body {
-  background: #d5f1f6 url('../_img/bg.png') repeat;
-  font-family: 'Fontin', Helvetica, Arial, sans-serif; 
+  background: #fff url('../_img/bg.png') repeat;
+  font-family: Helvetica, Arial, sans-serif; 
   color:#333;
 }
 .wrapper {
@@ -24,16 +24,15 @@ body {
 	left: 0px;
 	z-index: 99;
 }
-
 .links a {
 	display: block;
 	color: #000;
 	font-size:.8em;
-	margin-left: -112px;
+	margin-left: -57px;
 	margin-bottom: 1px;
 	background-color: #fff;
 	padding: 2px 15px 1px 10px;
-	width: 110px;
+	width: 55px;
 }
 .resume {
 	background: url('../_img/resume-b.png') no-repeat right center;
@@ -41,6 +40,9 @@ body {
 
 .email {
 	background: url('../_img/email-b.png') no-repeat right center;
+}
+.flickr {
+	background: url('../_img/flickr-b.png') no-repeat right center;
 }
 h5 {
 	margin: 10px;
@@ -61,7 +63,7 @@ overflow: auto;
 
 ul.sections li {
 	width: 945px;
-	margin: 0 auto;
+	margin: 0 auto -3px;
 }
 
 ul.sections > li h2 {
@@ -72,7 +74,6 @@ background: #fff;
 display: block;
 padding: 19px 10px 13px;
 /*opacity: .75;*/
-/*text-align: center;*/
 overflow: hidden;
 cursor: default;
 }
@@ -93,23 +94,3 @@ ul.sections > li.sticky h2 {
 position: absolute;
 top: 0;
 }
-
-/*ul.sections ul li {
-padding: 0;
-}*/
-/* float rules */
-/*.floatleft{float:left;margin:3px 7px 0 0;}
-.floatright{float:right;margin:3px 0 0 7px;}
-.right{float:right;}
-.left{float:left;}
-.clear{clear:both;}
-.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
-.fix{display:inline-block;} 
-* html .fix{height:1%;}
-.fix{display:block;}*/
-/* misc */
-/*.hidden {
-  display:inline;
-	display : none;
-	
-}*/

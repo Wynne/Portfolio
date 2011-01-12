@@ -3,18 +3,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<!-- <meta http-equiv="Content-Type" content="<?= (stristr($_SERVER["HTTP_ACCEPT"],"application/xhtml+xml") ? 'xhtml+xml' : 'text/html') ?>; charset=utf-8" /> -->
+	<meta http-equiv="Content-Type" content="<?= (stristr($_SERVER["HTTP_ACCEPT"],"application/xhtml+xml") ? 'xhtml+xml' : 'text/html') ?>; charset=utf-8" />
 	<meta http-equiv="Content-Language" content="en-us" />
 
 	<title>Wynne Chan | 2010 Portfolio</title>
 
-	<meta name="Keywords" content="__CHANGE__" />
-	<meta name="Description" content="__CHANGE__" />
+	<meta name="Keywords" content="Visual Interaction Design" />
+	<meta name="Description" content="Visual + Interaction Portfolio" />
 		
 	<meta name="ROBOTS" content="ALL" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta name="Copyright" content="(c) 2010 Hot Totti" />
+	<meta name = "viewport" content = "width = device-width">
 	
 	<?php require_once('browser.php'); css_add() ?>
 	<link href="_css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />

@@ -94,3 +94,7 @@ ul.sections > li.sticky h2 {
 position: absolute;
 top: 0;
 }
+li.thanks {
+  margin:30px 0 !important;
+}
+}

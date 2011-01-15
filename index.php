@@ -22,7 +22,7 @@
 			<li><h2>Grapevine | profile<!-- <p class="desc"><span>?</span> A music application</p> --></h2>
 				<ul>
 					<li><img src="_img/moodboard.jpg" width="945" height="1071" alt="Moodboard"></li>
-					<li><img src="_img/process.jpg" width="945" height="1071" alt="Process"></li>
+					<li><img src="_img/grapevine-process.jpg" width="945" height="1071" alt="Process"></li>
 					<li><img src="_img/byproducts.jpg" width="945" height="1071" alt="Byproduct"></li>
 				</ul>
 			</li>

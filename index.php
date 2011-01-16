@@ -35,9 +35,16 @@
 			  <ul>
 			    <li><img src="_img/tracks-process2.jpg" width="945" height="1071" alt="Tracks Process"></li>
 			    <li><img src="_img/tracks-iphone.jpg" width="945" height="1514" alt="Tracks iPhone"></li>
+					<li><img src="_img/tracks-ipad.jpg" width="945" height="2655" alt="Tracks iPad"></li>
+			  </ul>
+			</li>
+			<li><h2>Misc</h2>
+			  <ul>
+					<li><img src="_img/tokyo.jpg" width="945" height="1071" alt="Tokyo Evite"></li>
 			    <li class="thanks"><img src="_img/thanks.png" width="945" height="134" alt="Thanks"></li>
 			  </ul>
 			</li>
+			
 		</ul>
 	</div>
 </div>

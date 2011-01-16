@@ -14,7 +14,7 @@
 	<meta name="ROBOTS" content="ALL" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
-	<meta name="Copyright" content="(c) 2010 Hot Totti" />
+	<meta name="Copyright" content="(c) 2010 Wynne Chan" />
 	<meta name = "viewport" content = "width = device-width">
 	
 	<?php require_once('browser.php'); css_add() ?>

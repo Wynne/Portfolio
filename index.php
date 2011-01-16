@@ -41,7 +41,7 @@
 			<li><h2>Misc</h2>
 			  <ul>
 					<li><img src="_img/tokyo.jpg" width="945" height="1071" alt="Tokyo Evite"></li>
-			    <li class="thanks"><img src="_img/thanks.png" width="945" height="134" alt="Thanks"></li>
+			    <li class="thanks"><img src="_img/thanks.png" width="304" height="200" alt="Thanks"></li>
 			  </ul>
 			</li>
 			

@@ -1,19 +1,3 @@
-/*!
-* Sticky Section Headers
-*
-* Copyright (c) 2010 Florian Plank (http://www.polarblau.com/)
-* Dual licensed under the MIT (MIT-LICENSE.txt)
-* and GPL (GPL-LICENSE.txt) licenses.
-*
-* USAGE:
-*
-*
-* $('#container').stickySectionHeaders({
-* stickyClass : 'sticky',
-* headlineSelector : 'strong'
-* });
-*/
-
 (function($){
 	
 	jQuery.event.add(window, "load", resizeFrame);
@@ -30,41 +14,19 @@
 				$('.links').css('opacity', '.75')
 			}
 			else {
-				// $('.links > li').children().css('background-color', 'transparent')	
 				$('.links').css('top', '16px')
 				$('.links').css('opacity', '1')			
 			}
-			// if (w<=1090) {
-			// 				$('.links > li').children().css('margin-left', '-70px')
-			// 				$('.links > li').children().css('background-position', 'right')
-			// 				$('.links > li').children().css('padding-right', '25px')
-			// 				
-			// 				 $('.links > li').hover(
-			// 				  function () {
-			// 				   $('a',$(this)).stop().animate({'marginLeft':'-15px'},200);
-			// 				
-			// 				  },
-			// 				  function () {
-			// 				   $('a',$(this)).stop().animate({'marginLeft':'-70px'},200);
-			// 				  }
-			// 				 );
-			// 		}
-			// 		else  {
-			// 			$('.links > li').children().css('margin-left', '0')
-			// 			$('.links > li').children().css('background-position', 'left')
-			// 			$('.links > li').children().css('padding-right', '2px')
-			// 			$('.links > li').hover(
-			// 			  function () {
-			// 			   $('a',$(this)).stop();				
-			// 			  },
-			// 			  function () {
-			// 			   $('a',$(this)).stop();
-			// 			  }
-			// 			 );
-			// 		}
 	}
 	
-	
+	/*!
+	* Sticky Section Headers
+	*
+	* Copyright (c) 2010 Florian Plank (http://www.polarblau.com/)
+	* Dual licensed under the MIT (MIT-LICENSE.txt)
+	* and GPL (GPL-LICENSE.txt) licenses.
+	*
+	*/	
   $.fn.stickySectionHeaders = function(options) {
 
    var settings = $.extend({

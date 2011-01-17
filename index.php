@@ -9,18 +9,9 @@
 		<!-- <div class="menu">links</div> -->
 	<div class="content" id="container">		
 		<ul class="sections">
-			<!-- <li>
-				<div id="top">
-					<ul class="intro">
-						<li><h5>Grapevine</h5><p></p></li>
-						<li><h5>Tracks.io</h5><p></p></li>
-						<li><h5>S.H.I</h5><p></p></li>
-						<li><h5>Tokyo Underground</h5><p></p></li>
-					</ul>
-				</div>
-			</li> -->
 			<li><h2>Grapevine | profile<!-- <p class="desc"><span>?</span> A music application</p> --></h2>
 				<ul>
+					<li><img src="_img/grapevine-logo.jpg" width="945" height="1071" alt="Grapevine Logo"></li>
 					<li><img src="_img/moodboard.jpg" width="945" height="1071" alt="Moodboard"></li>
 					<li><img src="_img/grapevine-process.jpg" width="945" height="1071" alt="Process"></li>
 					<li><img src="_img/byproducts.jpg" width="945" height="1071" alt="Byproduct"></li>

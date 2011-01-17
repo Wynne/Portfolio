@@ -35,7 +35,7 @@
 			  <ul>
 			    <li><img src="_img/tracks-process2.jpg" width="945" height="1071" alt="Tracks Process"></li>
 			    <li><img src="_img/tracks-iphone.jpg" width="945" height="1514" alt="Tracks iPhone"></li>
-					<li><img src="_img/tracks-ipad.jpg" width="945" height="2655" alt="Tracks iPad"></li>
+					<li><img src="_img/tracks-ipad.jpg" width="945" height="2591" alt="Tracks iPad"></li>
 			  </ul>
 			</li>
 			<li><h2>Misc</h2>
